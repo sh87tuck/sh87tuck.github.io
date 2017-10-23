@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 1: DiscoveryCRM Design Rationale</title>
+</head>
+<body>
+
+<h1>Design Rationale</h1>
+
+
+<p>
+    &nbsp &nbsp Our team has decided to approach the design problem by using system analysis and software engineering techniques</br>
+    outlined and communicated by the Unified Model Language. This approach allows the requirements to be traced and documented throughout the requirements gathering</br>
+    and design process. In addition it supports our goal of incorporating important non-functional requirements such as NFR-1 into the design discussion.</br>
+    The partial package diagram, listed in high level design, shows the vision for the systems architecture as a 3-tier information system typical with web technology facing solutions.</br>
+</p>
+
+<p>
+    &nbsp &nbsp The key design decisions were developed through an iterative process to determine which common patterns may be best applied to our design problem. The major design considerations are:
+</p>
+
+<ol>
+    <li>Get data into the system. Requirement: FR1 is satisfied with the Human/Computer Interface layer.</li>
+    <li>Verifying that data is useful to the stakeholders. Requirement: FR4 is satisfied within the Processing Layer..</li>
+    <li>Reduce the impact of the technology on the current system. Requirement: NFR-2.a is handled in the Processing and Data Management Layer..</li>
+    <li>Allow user intervention when required. Requirement: FR5 is addressed in the each layer.</li>
+</ol>
+
+<p>
+    &nbsp &nbsp The vision for this new system design is to eliminate tedious time consuming process for the recruiters working in staffing industry.</br>
+    The problem was suggested by Seunghyuk Baek who is working as a technical sourcer.</br>
+    From his experience, duplicated candidate profile in the company CRM’s database will cause slow down and waste recruiters’ time. For example,</br>
+    a recruiter may try to contact one candidate while another recruiter is working with the candidate. Thus, the design is focusing on establishing a novel method</br>
+    to reduce creation of duplicated candidate profile in the database and eliminate existing duplication. In current system, when a recruiter parses a resume,</br>
+    the system provides a list with possible duplicated profiles consist of candidate's’ name and email address. Since duplication checking is done mostly by human hand, the chance of creating duplication is high.</br>
+</p>
+
+<p>
+    &nbsp &nbsp Adopting new rules will not be enough to alleviate the problem of the company already using the database with many duplicated profiles.</br>
+    Moreover, a recruiter will not prefer spending more time on creating a new profile. To solve such a problem, we are introducing two modules into the system and re-prioritising data writing process.</br>
+
+<p>
+    &nbsp &nbsp The framework developed in the DiscoveryCRM project design document is expected to provide a vision to enable incorporating more functionality</br>
+    and enable structural and behavioral modeling that can work quality, understandability, and modularity into the low level components of the system.</br>
+    Future implementations/deployments of the system that are possible as an expansion to the high level design are:
+</p>
+
+    <ol>
+        <li> Adopting A.I. monitoring system that constantly search duplication in the database.</li>
+        <ul>
+            <li>A.I. database cleaner will introduce into the system. The A.I. constantly reduces duplication in database so that any mistake made by human can be resolved fast. In addition, the A.I. will cleaning the database to save space for future candidate profiles. </li>
+        </ul>
+        <li> Intensive search engine is adopted into system.</li>
+        <ul>
+            <li>Current version of staffing CRM only check names and emails to find duplication. However, many people used more than one email address as time goes by, or change their name on resume due to marriage. </li>
+        </ul>
+    </ol>
+
+<p>
+    &nbsp &nbsp Trade off must be considered throughout the process of implementing the design. Those trade offs also include deciding whether to buy or build, choice of accuracy or performance.</br>
+    For example, the resume parsed by the candidate will be matched with reconcile module. Reconcile module has designated search engine and indexing which will reduce possibility of duplication.</br>
+    However, the intensive matching may result in slower speed in data writing. Using the DiscoveryCRM high-level design framework and functional design document allows multiple options for implementation.</br>
+</p>
+
+</body>
+</html>
