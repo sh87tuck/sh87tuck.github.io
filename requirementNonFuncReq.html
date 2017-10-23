@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 1: DiscoveryCRM: requirements</title>
+</head>
+<body>
+
+<h1>Non-Functional Requirements</h1>
+
+
+<li>Operational Requirements</li>
+<ol type="a">
+    <li>The system will operate in Windows environment</li>
+    <li>The system will provide simple form api so that job seekers can submit their own resume.</li>
+    <li>The system’s resume parsing module need to parse the resume with various documents formats including pdf, doc, rtf, txt files</li>
+</ol>
+
+<li>Performance Requirements</li>
+<ol type="a">
+    <li>Constant duplication checker will pick a candidate lead(or entity) randomly from the database and search the duplication </br>
+        in the database there will be more intense keywords matching than instant duplication checking</li>
+    <li>Placement agent removes job candidate</li>
+    <li>Placement agent manually approves data reconciliation</li>
+</ol>
+
+<li>Security Requirements</li>
+<ol type="a">
+    <li>Only placement agents have access to modify candidate record manually</li>
+    <li>Redundant emergency backup database will be in place</li>
+    <li>Intermediate data is destroyed.</li>
+    <li>Personally protected information is handled/processed in accordance w/ local laws and regulations.</li>
+</ol>
+
+</ol>
+
+<h2>Requirements Traceability Matrix</h2>
+
+<table>
+    <tr>
+        <td>Requirement ID</td>
+        <td>Description</td>
+    </tr>
+    <tr>
+        <td>FR 1</td>
+        <td>Collect direct job candidate data</td>
+    </tr>
+    <tr>
+        <td>FR2</td>
+        <td>Manage Data</td>
+    </tr>
+    <tr>
+        <td>FR3</td>
+        <td>Create New Job Candidate</td>
+    </tr>
+    <tr>
+        <td>FR4</td>
+        <td>Reconcile resume data</td>
+    </tr>
+    <tr>
+        <td>FR5</td>
+        <td>Manage job candidate profiles</td>
+    </tr>
+    <tr>
+        <td>NFR1</td>
+        <td>Operational Requirements</td>
+    </tr>
+    <tr>
+        <td>NFR2</td>
+        <td>Performance Requirements</td>
+    </tr>
+    <tr>
+        <td>NFR3</td>
+        <td>Security Requirements</td>
+    </tr>
+    <tr>
+        <td>NFR4</td>
+        <td>Cultural and Political Requirements</td>
+    </tr>
+</table>
+
+
+</br>
+<a href="requirementFunctionalReq.html"> <<<< Previous &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp     </a>
+<a href="highLevelDesign.html">       Next >>>> </a>
+</body>
+</html>
